@@ -1,0 +1,11 @@
+framework module FluentUI {
+  umbrella header "MicrosoftFluentUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module FluentUI.Swift {
+  header "FluentUI-Swift.h"
+  requires objc
+}

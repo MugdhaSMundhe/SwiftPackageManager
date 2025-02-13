@@ -6,25 +6,28 @@ import PackageDescription
 let package = Package(
     name: "SPMDemoApp",
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "SPMDemoApp",
-            targets: ["SPMDemoApp"]),
+            targets: ["SPMDemoApp", "AdaptiveCards", "CocoaLumberjack","FluentUI","SVGKit"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SPMDemoApp",
-             dependencies: [
-                .target(name: "Test"),
-            ]),
+            name: "SPMDemoApp"),
         .testTarget(
             name: "SPMDemoAppTests",
             dependencies: ["SPMDemoApp"]
         ),
         .binaryTarget(
-            name: "Test",
-            path: "./Sources/Test.xcframework")
+            name: "AdaptiveCards",
+            path: "./Sources/AdaptiveCards.xcframework"),
+        .binaryTarget(
+            name: "CocoaLumberjack",
+            path: "./Sources/CocoaLumberjack.xcframework"),
+        .binaryTarget(
+            name: "FluentUI",
+            path: "./Sources/FluentUI.xcframework"),
+        .binaryTarget(
+            name: "SVGKit",
+            path: "./Sources/SVGKit.xcframework")
     ]
 )
