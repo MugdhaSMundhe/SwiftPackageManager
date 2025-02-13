@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "SPMDemoApp",
-            targets: ["SPMDemoApp", "AdaptiveCards", "CocoaLumberjack","FluentUI","SVGKit"]),
+            targets: ["SPMDemoApp", "AdaptiveCards", "CocoaLumberjack","FluentUI","SVGKit","Test"]),
     ],
     targets: [
         .target(
