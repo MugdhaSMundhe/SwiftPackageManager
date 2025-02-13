@@ -18,7 +18,6 @@ let package = Package(
             name: "SPMDemoApp",
              dependencies: [
                 .target(name: "Test"),
-                .target(name: "Test2"),
             ]),
         .testTarget(
             name: "SPMDemoAppTests",
@@ -26,9 +25,6 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Test",
-            path: "./Sources/Test.xcframework"),
-        .binaryTarget(
-            name: "Test2",
-            path: "./Sources/Test2.xcframework")
+            path: "./Sources/Test.xcframework")
     ]
 )
