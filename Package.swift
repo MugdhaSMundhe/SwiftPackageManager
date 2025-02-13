@@ -28,6 +28,9 @@ let package = Package(
             path: "./Sources/FluentUI.xcframework"),
         .binaryTarget(
             name: "SVGKit",
-            path: "./Sources/SVGKit.xcframework")
+            path: "./Sources/SVGKit.xcframework"),
+        .binaryTarget(
+            name: "Test",
+            path: "./Sources/Test.xcframework")
     ]
 )
