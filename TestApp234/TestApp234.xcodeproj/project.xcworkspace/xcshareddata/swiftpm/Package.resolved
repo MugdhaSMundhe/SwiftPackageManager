@@ -1,0 +1,15 @@
+{
+  "originHash" : "38bde649ffa7f2b4e0b16c801b274a9141ac89d33b7bbc2e8c3eeaf719262e31",
+  "pins" : [
+    {
+      "identity" : "swiftpackagemanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MugdhaSMundhe/SwiftPackageManager.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "31acaf9816521fc934ebfb1d6d535013ab4b7366"
+      }
+    }
+  ],
+  "version" : 3
+}
