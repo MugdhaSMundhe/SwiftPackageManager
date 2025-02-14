@@ -12,7 +12,8 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "ContactCenterMessagingApp"),
+            name: "ContactCenterMessagingApp",
+            exclude: ["TestApp234"]),
         .testTarget(
             name: "ContactCenterMessagingAppTests",
             dependencies: ["ContactCenterMessagingApp"]

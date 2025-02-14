@@ -17,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>ContactCenterMessagingApp</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ContactCenterMessagingAppTests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>SPMDemoApp</key>
 		<dict>
 			<key>primary</key>
