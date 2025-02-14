@@ -4,18 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "SPMDemoApp",
+    name: "ContactCenterMessagingApp",
     products: [
         .library(
-            name: "SPMDemoApp",
-            targets: ["SPMDemoApp", "AdaptiveCards", "CocoaLumberjack","FluentUI","SVGKit","Test"]),
+            name: "ContactCenterMessagingApp",
+            targets: ["ContactCenterMessagingApp", "AdaptiveCards", "CocoaLumberjack","FluentUI","SVGKit"]),
     ],
     targets: [
         .target(
-            name: "SPMDemoApp"),
+            name: "ContactCenterMessagingApp"),
         .testTarget(
-            name: "SPMDemoAppTests",
-            dependencies: ["SPMDemoApp"]
+            name: "ContactCenterMessagingAppTests",
+            dependencies: ["ContactCenterMessagingApp"]
         ),
         .binaryTarget(
             name: "AdaptiveCards",
@@ -28,9 +28,6 @@ let package = Package(
             path: "./Sources/FluentUI.xcframework"),
         .binaryTarget(
             name: "SVGKit",
-            path: "./Sources/SVGKit.xcframework"),
-        .binaryTarget(
-            name: "Test",
-            path: "./Sources/Test.xcframework")
+            path: "./Sources/SVGKit.xcframework")
     ]
 )
