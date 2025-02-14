@@ -14,7 +14,7 @@ let package = Package(
         .target(
             name: "ContactCenterMessagingApp",
             dependencies: [],
-            exclude: ["TestApp234"]),
+            exclude: ["*/TestApp234"]),
         .testTarget(
             name: "ContactCenterMessagingAppTests",
             dependencies: ["ContactCenterMessagingApp"]
