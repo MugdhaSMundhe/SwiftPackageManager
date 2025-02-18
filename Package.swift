@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "ContactCenterMessagingApp",
-            targets: ["ContactCenterMessagingApp", "ContactCenterMessagingSDK"]),
+            targets: ["ContactCenterMessagingSDK"]),
     ],
     targets: [
         .target(
