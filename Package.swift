@@ -8,17 +8,11 @@ let package = Package(
     products: [
         .library(
             name: "ContactCenterMessagingApp",
-            targets: ["ContactCenterMessagingApp"]),
+            targets: ["ContactCenterMessagingApp", "ContactCenterMessagingSDK"]),
     ],
     targets: [
         .target(
-            name: "ContactCenterMessagingApp",
-            dependencies: [],
-            exclude: ["*/TestApp234"]),
-        .testTarget(
-            name: "ContactCenterMessagingAppTests",
-            dependencies: [.target(name: "ContactCenterMessagingSDK")]
-        ),
+            name: "ContactCenterMessagingApp"),
         .binaryTarget(
             name: "ContactCenterMessagingSDK",
             url: "https://github.com/microsoft/ContactCenterMessagingSDK-ios/releases/download/v0.0.2/ContactCenterMessagingSDK.zip",
@@ -26,4 +20,3 @@ let package = Package(
         )
     ]
 )
-
