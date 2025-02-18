@@ -17,19 +17,13 @@ let package = Package(
             exclude: ["*/TestApp234"]),
         .testTarget(
             name: "ContactCenterMessagingAppTests",
-            dependencies: ["ContactCenterMessagingApp"]
+            dependencies: [.target(name: "ContactCenterMessagingSDK")]
         ),
         .binaryTarget(
-            name: "AdaptiveCards",
-            path: "./Sources/AdaptiveCards.xcframework"),
-        .binaryTarget(
-            name: "CocoaLumberjack",
-            path: "./Sources/CocoaLumberjack.xcframework"),
-        .binaryTarget(
-            name: "FluentUI",
-            path: "./Sources/FluentUI.xcframework"),
-        .binaryTarget(
-            name: "SVGKit",
-            path: "./Sources/SVGKit.xcframework")
+            name: "ContactCenterMessagingSDK",
+            url: "https://github.com/microsoft/ContactCenterMessagingSDK-ios/releases/download/v0.0.2/ContactCenterMessagingSDK.zip",
+            checksum: "b30812cf887c967b37fa84027a82a1de0559ccfa3c1d942dc15357986f65e3c2"
+        )
     ]
 )
+
